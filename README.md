@@ -4,6 +4,7 @@
   1. A window appears asking to fill numbers in grid
   2. A button is pressed to solve the sudoku
   3. The unfilled spaces are filled with the answer
+  4. Eric gets all the credit.
 
 --- 
 ## Python structure
