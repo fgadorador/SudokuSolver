@@ -76,12 +76,8 @@ def get_row(row,column,number):
 # Removal of the kown elements in the inital matrix
 # Get the row and column indexes of the elements different than 0
 initial = reshape(sudoku)
-values = []
-for i in range(n):
-    for j in range(n):
-        v = initial[i,j]
-        if(v!=0):
-            values.append(get_row(i,j,v))
+matrix = np.meshgrid(range(n), range(n))
+values = [get_row(i,j,initial[i,j]) for i,j  in zip(matrix[1].ravel(), matrix[0].ravel()) if initial[i,j] != 0]
 print(values)
 
 
